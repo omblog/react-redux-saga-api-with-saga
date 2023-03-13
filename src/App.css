@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* header style */
+.header{
+  background-color: orange;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box input[type="text"] {
+  height: 40px;
+  width: 250px;
+  padding: 0px 20px;
+  outline: none;
+  border: none;
+}
+.cart-div{
+
+  margin: 30px;
+  position: relative;
+}
+.cart-div img{
+  width: 30px;
+}
+.cart-div span{
+  background-color: green;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  position:absolute;
+  top:-10px;
+  right:0px;
+  color: #fff;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.product-item {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin: 20px;
+}
+/* end header style */
+
+
+.header h1 {
+    float: left;
+    margin: 0;
+    padding: 20px;
+}
+.cart-page-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.cart-page-container table {
+  flex-basis: 80%;
+  border-collapse: collapse;
+}
+.cart-page-container table tr th, .cart-page-container table tr td{
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.price-details {
+  flex-basis: 16%;
+  margin: 0 30px;
+}
+.adjust-price{
+  display: flex;
+  justify-content:space-between;
+  padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.cart-page-container table tr td img {
+  width: 30px;
+
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
